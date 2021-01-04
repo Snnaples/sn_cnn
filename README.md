@@ -1,4 +1,7 @@
 # vrp_cnn
+POZA: https://imgur.com/a/fo9IA4U
+
+
 
 Anunt la CNN cu un npc 
 
