@@ -19,10 +19,10 @@ AddEventHandler("snnaples:AnuntCNN", function()
         local anunt = tostring(anunt) 
         if string.len(anunt) >= 10 and string.len(anunt) <= 800 then
             if vRP.tryFullPayment({user_id, 300}) then     
-                local users = vRP.getUsers()
-                    for k,v in pairs(users) do
-                    vRPclient.announce(v,{announces.commercial.image,"[" .. user_id .. "] " .. playerName  .. ": " .. anunt})
-            end
+   
+                             
+                    vRPclient.announce(-1,{announces.commercial.image,"[" .. user_id .. "] " .. playerName  .. ": " .. anunt})
+            
                 vRPclient.notify(playerSource,{"[~b~CNN~w~] ~g~Ai dat un anunt!"})
         else
             vRPclient.notify(playerSource,{"[~b~CNN~w~] ~r~Nu ai destui bani pentru a da un anunt!"})
